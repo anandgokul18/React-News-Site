@@ -1,0 +1,162 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+/* override bootstrap navbar colors */
+.navbar{
+  background: #0c113f linear-gradient(141deg, #0c113f 0, #303f9f 51%, #3f51b5 75%) repeat scroll 0 0;
+}
+
+#wrapper {
+  display: flex;
+}
+
+#left {
+  flex: 0 0 70%;
+  font-size: 12px;
+  font-style: italic;
+}
+
+#right {
+  flex: 1;
+  font-size: 12px;
+}
+
+#leftexpanded_default {
+  flex: 0 0 75%;
+  font-size: 12px;
+  font-style: italic;
+}
+
+#leftexpanded_tablet {
+  flex: 0 0 65%;
+  font-size: 12px;
+  font-style: italic;
+}
+
+#leftexpanded_mobile {
+  flex: 0 0 55%;
+  font-size: 12px;
+  font-style: italic;
+}
+
+#rightexpanded {
+  flex: 1;
+  font-size: 12px;
+}
+
+#leftbookmarks {
+  flex: 0 0 45%;
+  font-size: 12px;
+  font-style: italic;
+}
+
+#rightbookmarks {
+  flex: 1;
+  font-size: 10px;
+}
+
+#leftsearch {
+  flex: 0 0 70%;
+  font-size: 12px;
+  font-style: italic;
+}
+
+#rightsearch {
+  flex: 1;
+  font-size: 10px;
+  overflow: hidden;
+}
+
+.hidden { 
+  display:none; 
+}
+
+.mr-auto a:hover {
+  color: #fff !important;
+}
+
+/*
+.mr-auto a:active {
+  color: #fff !important;
+}
+
+.activeNavLink{
+  color: #fff;
+}
+
+
+.selectedLink{
+  color: #f9f9f9;
+}
+
+.mr-auto a:active{
+  color: maroon;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  background-color: #fff;
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link.active a:hover {
+  background-color: #000;
+  color: #000;
+}
+
+a{
+  color: violet;
+}
+
+.navbar .navbar-nav .active > .nav-link, .navbar .navbar-nav .nav-link.active, .navbar .navbar-nav .nav-link.show, .navbar .navbar-nav .show > .nav-link{  color: pink;
+  color: #fff;
+}
+*/
+
+
+/*Bootstrap 4 Media Queries*/
+/* 
+Extra small devices (portrait phones, less than 544px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+p {font-size:0.9rem;} /*1rem = 16px*/
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+p {font-size:0.9rem;} /*1rem = 16px*/
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+  p {font-size:1.2rem;} /*1rem = 16px*/
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  p {font-size:1.5rem;} /*1rem = 16px*/
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
